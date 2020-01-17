@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GifTastic</title>
+    <!--reset CSS-->
+    <link rel="stylesheet" href="assets\css\reset.css" />
+    <!--add Bootstrap-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <!--link to local CSS-->
+    <link rel="stylesheet" href="assets\css\style.css" />
+    <!--link to JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--lnk to local JS-->
+    <script src="assets\javascript\game2.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" id="display-buttons"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <form id="form">
+            <label for="user-input">Some text here</label>
+            <input type="text" id="user-input" />
+            <input
+              id="submitButton"
+              type="submit"
+              value="submit"
+              class="btn btn-primary"
+            />
+          </form>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="image-display"></div>
+      </div>
+    </div>
+  </body>
+</html>
