@@ -14,8 +14,11 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <!--link to local CSS-->
     <link rel="stylesheet" href="assets\css\style.css" />
+    //link to Google Fonts
+    <link href="https://fonts.googleapis.com/css?family=MedievalSharp&display=swap" rel="stylesheet">
     <!--link to JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--lnk to local JS-->
@@ -23,25 +26,28 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron m-8 text-center bg-transparent"><h1>Game of Thrones Gif Generator</h1></div>
       <div class="row">
-        <div class="col-md-12" id="display-buttons"></div>
+        <div class="col-md-12 text-center" id="display-buttons"></div>
       </div>
+      <br>
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
           <form id="form">
-            <label for="user-input">Some text here</label>
+            <label for="user-input"><h3>Enter your favorite Game Of Thrones House!</h3></label>
+            <br>
             <input type="text" id="user-input" />
             <input
               id="submitButton"
               type="submit"
-              value="submit"
-              class="btn btn-primary"
+              value="Submit"
+              class="btn btn-dark"
             />
           </form>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-12" id="image-display"></div>
+        <div class="grid max-w-4xl mx-auto p-8" id="image-display"></div>
       </div>
     </div>
   </body>

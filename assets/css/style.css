@@ -1,0 +1,43 @@
+
+body {
+    background-image: url("../images/game_of_thrones_inspiered_background_by_ivegotswagger_d4fa1dz-pre.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'MedievalSharp', cursive;
+}
+.jumbotron{
+    color:whitesmoke;
+    font-size: 72px;
+    text-shadow:
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
+}
+.btn{
+    margin: 4px;
+}
+label{
+    font-size: 24px;
+}
+.grid{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 1.5rem; 
+}
+*@media screen and (min-width: 768px){
+    .grid{
+        grid-template-columns: 2, 1fr;
+    }
+}
+@media scree and (min-width: 992px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+.badge{
+    text-transform:uppercase ;
+}
