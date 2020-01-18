@@ -41,7 +41,33 @@ $(document).ready(function() {
       }
     });
   }
-  
 
+  function animateGif() {
+    let currentState = $(this).attr("gif-state");
+    let gifAnimate = $(this).attr("gif-animate");
+    let gifStill = $(this).attr("gif-still");
+
+    if (currentState == "still"){
+        $(this).attr("src",gifAnimate);
+        $(this).attr("gif-state", "animate");
+    }
+    else if (currentState == "animate"){
+        $(this).attr("src",gifStill);
+        $(this).attr("gif-state", "still");
+    }
+  }
+
+  function makeButton(){
+      for(let j = 0; j < topics.length; j++){
+       let newButton = $("<button>" + topics[j] + "</button>")
+       newButton.attr("class", "btn btn-info");
+          newButton.appendTo("#display-buttons");
+      }
+  }
+  makeButton();
+
+
+  
+  
   //dont lose these
 });
